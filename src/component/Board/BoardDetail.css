@@ -1,0 +1,114 @@
+/* BoardDetail.js */
+.BoardWrap {
+    width: 1000px;
+    margin: 30px auto;
+}
+/* BoardViewContent.js 게시물*/
+.BoardViewContent {
+    width: 100%;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+.BoardViewContent .title {
+    padding: 15px;
+}
+.BoardViewContent .title dl {
+    font-size: 0;
+}
+.BoardViewContent .title dt,
+.BoardViewContent .title dd{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
+.BoardViewContent .title dt{
+    width: 50px;
+}
+.BoardViewContent .title dd {
+    width: calc(100% - 100px);
+}
+.BoardViewContent .title textarea {
+        width: 100%;
+        height: 15px;
+        border: none;
+        overflow:hidden;
+}
+.BoardViewContent .info {
+    padding: 15px;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px solid #999;
+    font-size: 0;
+}
+.BoardViewContent .info dl {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+.BoardViewContent .info dl:first-child {
+    padding-left: 0;
+}
+.BoardViewContent .info dl::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 13px;
+    background: #ddd;
+}
+.BoardViewContent .info dl:first-child::before {
+    display: none;
+}
+.BoardViewContent .info dl dt,
+.BoardViewContent .info dl dd {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+.BoardViewContent .info dl dd {
+    margin-left: 10px;
+    color: #777;
+}
+.BoardViewContent textarea {
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    line-height: 160%;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 20em;
+    border: none;
+    resize: none;
+}
+/* .BoardDetailEdit .cont textarea {
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0;
+    resize: vertical;
+} */
+/* BoardViewContent.js 버튼*/
+.BoardViewButtons {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0;
+}
+.BoardViewButtons input{
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #868e96;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+.BoardViewButtons a:first-child {
+    margin-left: 0;
+}
+.BoardViewButtons input.list {
+    background: #1dc078;
+    color: #fff;
+}
